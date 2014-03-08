@@ -4,7 +4,7 @@
 
 EAPI=5
 
-inherit autotools eutils flag-o-matic versionator
+inherit autotools eutils flag-o-matic
 
 MY_PV="${PV%%_beta*}b${PV##*_beta}"
 MY_P="${PN}-${MY_PV}"
@@ -16,7 +16,7 @@ SRC_URI="https://github.com/marcomaggi/${PN}/archive/${MY_PV}.tar.gz"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~x86 ~amd64"
-IUSE="static"
+IUSE="static-libs"
 
 RDEPEND="
 	dev-libs/re2
@@ -31,16 +31,9 @@ src_prepare() {
 }
 
 src_configure() {
+	# maintainer mode because version.texi is not provided in the tarball
 	econf \
 		--enable-maintainer-mode \
-		$(use_enable static static)
-}
-
-src_compile() {
-	emake
-}
-
-src_install() {
-	default
+		$(use_enable static-libs static)
 }
 
