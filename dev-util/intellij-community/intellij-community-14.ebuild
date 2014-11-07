@@ -5,7 +5,7 @@ inherit eutils
 MY_PN="ideaIC"
 MY_P="${MY_PN}-${PV}"
 
-BUILD_NUM="135.480"
+BUILD_NUM="139.224.1"
 DIRNAME="idea-IC-${BUILD_NUM}"
 
 DESCRIPTION="IntelliJ IDEA is a Java IDE by JetBrains"
