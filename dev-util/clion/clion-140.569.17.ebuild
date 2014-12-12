@@ -3,8 +3,8 @@ EAPI="5"
 inherit eutils
 
 DESCRIPTION="Pycharm is a Python IDE by JetBrains"
-HOMEPAGE="http://www.jetbrains.com/pycharm"
-SRC_URI="http://download.jetbrains.com/cpp/${P}.tar.gz"
+HOMEPAGE="https://www.jetbrains.com/pycharm"
+SRC_URI="https://download.jetbrains.com/cpp/${P}.tar.gz"
 LICENSE="as-is"
 SLOT="0"
 KEYWORDS="~amd64"

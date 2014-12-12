@@ -5,12 +5,12 @@ inherit eutils
 MY_PN="ideaIC"
 MY_P="${MY_PN}-${PV}"
 
-BUILD_NUM="139.224.1"
+BUILD_NUM="139.659.2"
 DIRNAME="idea-IC-${BUILD_NUM}"
 
 DESCRIPTION="IntelliJ IDEA is a Java IDE by JetBrains"
-HOMEPAGE="http://www.jetbrains.com/idea"
-SRC_URI="http://download.jetbrains.com/idea/${MY_P}.tar.gz"
+HOMEPAGE="https://www.jetbrains.com/idea"
+SRC_URI="https://download.jetbrains.com/idea/${MY_P}.tar.gz"
 LICENSE="as-is"
 SLOT="0"
 KEYWORDS="~amd64"
